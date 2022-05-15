@@ -145,6 +145,7 @@ h1 {
     border: 2px solid rgb(71, 71, 71);
     border-radius: 5px 40px 5px 40px;
     color: rgb(197, 118, 131);
+    width: 450px;
     word-wrap: break-word;
     word-break: break-all;
 }
