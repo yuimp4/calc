@@ -1,0 +1,699 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(./jpg/bg_photo_400000.png);
+    background-color: rgb(247, 247, 247);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 19px;
+    font-family: 'Baloo Bhaijaan 2';
+    color: rgb(243, 243, 243);
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(253, 253, 162);
+    cursor: pointer;
+}
+
+/* scroll bar (na firefox nefunguje) */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background: rgb(226, 222, 228);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(27, 22, 26);
+    }
+
+/* scroll bar */
+
+
+
+
+/* SPOLECNE CSS */
+    article {
+        margin-left: 27vh;
+        text-align: justify;
+        font-size: 19px;
+        max-width: fit-content;
+        background-color: rgba(24, 20, 24, 0.3);
+    }
+
+    section {
+        padding: 8px;
+        padding-top: 10px;
+    }
+
+    .hl_nadpis {
+        padding: 5px;
+    }
+
+    h1 {
+        text-align: left;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 15px;
+        color: rgb(253, 253, 162);
+    }
+    /* hlavni nadpis */
+
+    .span1 {
+        font-size: 30px;
+        padding: 5px;
+    }
+    /* druha cast hlavniho nadpisu */
+
+    .hr1 {
+        width: 75%;
+        height: 5px;
+        border-radius: 2px;
+        background-image: linear-gradient(lightpink, lightblue, lightyellow );
+        border: none;
+    }
+    /* první hr hned pod nadpisem */
+
+    /*.varovani {
+        align-items: center;
+        font-weight: bold;
+        text-decoration: underline;
+    }*/
+
+    .velkep {
+        font-size: 30px;
+        padding: 5px;
+    }
+    /* velke prvni pismeno */
+
+    hr {
+        width: 30%;
+        height: 2px;
+        background-color: rgb(235, 225, 241);
+        border-color: rgb(235, 225, 241);
+        margin: 8px;
+    }
+
+    p {
+        padding: 8px;
+        text-align: justify;
+        margin-left: 15px;
+        width: 69%;
+        /*   box-shadow: 3px 3px 39px rgb(196, 194, 186);
+        border-radius: 6px;   */
+    }
+
+    h2 {
+        padding-top: 2em;
+    }
+
+    .zdroj {
+        color: rgb(131, 131, 131);
+        font-style: italic;
+        font-size: 18px;
+        float: right;
+    }
+
+    .blog {
+        text-decoration: none;
+        color: rgb(253, 253, 162);
+    }
+    /* barva odkazů v textu */
+
+/* /SPOLECNE CSS */
+
+
+/* HLAVNÍ MENU */
+    .menu, .nav_polozka, .ib_nadpis {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        color: white;
+    } 
+    /* navigacni bar */
+
+    .nav_polozka {
+        margin-left: 25px;
+    }
+    /* stranky menu */
+
+    .navh {
+        background-image: linear-gradient(to right, rgb(65, 53, 66), rgb(191, 143, 201));
+        font-weight: bold;
+        position: sticky;
+        top: -10px;
+    }
+    /* horizontalni menu */
+
+    .hlavni_menu_a {
+        transition: 0.4s;
+    }
+
+    .hlavni_menu_a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .hlavni_menu_a:active {
+        color: rgb(255, 187, 41);
+    }
+
+    .ib_nadpis {
+        position: absolute;
+        top: 1vh;
+        left: 49%;
+        font-size: 25px;
+    }
+
+    .aktivni {
+        color: rgb(255, 255, 50);
+    }
+/* /HLAVNÍ MENU */
+
+
+
+
+
+/* MENU VLEVO */
+
+    .navv_polozka {
+        padding: 15px 10px 15px 10px;
+        border-radius: 6px;
+        background-color: rgb(99, 67, 92);
+        margin: 8px;
+        transition: 0.4s;
+    }
+    /* vertikalni menu vlevo */
+
+    .navv_polozka:hover {
+        background-color: rgb(51, 45, 51);
+    }
+
+    .sidemenu {
+        color: rgb(248, 248, 248);
+        transition: 0.4s;
+    }
+    /* a vertikalniho menu vlevo */
+
+    .sidemenu:hover {
+        font-weight: 800;
+        color: rgb(250, 250, 146);
+    }
+
+    .sidemenuv {
+        height: 100%;
+    }
+    /* ul vertikalniho menu vlevo */
+
+    ul li {
+        list-style-type: none;
+    }
+
+    .navv {
+        list-style-type: none;
+        position: fixed;
+        width: 25vh;
+        height: 100vh;
+        text-align: center;
+        border: 1px solid rgb(99, 67, 92);
+        border-top-style: none;
+        border-bottom-style: none;
+        border-left-style: none;
+        border-right-style: solid;
+    }
+    /* div vertikalniho menu vlevo */
+
+/* /MENU VLEVO */
+
+
+
+/* GALERIE VPRAVO */
+
+    .nadpis_galerie {
+        text-align: center;
+    }
+
+    aside {
+        position: fixed;
+        right: 0;
+        align-items: center;
+        height: 93vh;
+        overflow: scroll;
+        border: 1px solid rgb(99, 67, 92);
+        border-top-style: none;
+        border-bottom-style: none;
+        border-left-style: solid;
+        border-right-style: none;
+    }
+
+    .gallery_div {
+        margin: 15px;
+        width: 33vh;
+        border: 1px solid rgba(238, 222, 238, 0.3);
+        border-radius: 6px;
+        background-color: rgba(118, 90, 131, 0.15);
+        
+    }
+
+    .img_side {
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .desc {
+        padding: 5px;
+        text-align: center;
+    }
+
+/* /GALERIE VPRAVO */
+
+
+
+
+
+/* CSS 1. STRANKY */
+
+    img {
+        padding: 10px;
+    }
+
+    .img_right {
+        float: right;
+    }
+
+    .img_left {
+        float: left;
+    }
+
+    .info, .info_polozka {
+        list-style-type: circle;
+        margin-left: 2vh;
+    }
+
+    .info {
+        padding: 15px;
+        border: 1px solid rgb(238, 222, 238);
+        border-radius: 5px;
+        max-width: 350px;
+
+    }
+    /* ul infa */
+
+    .info_polozka {
+        padding: 5px;
+    }
+
+    .a3 {
+        color: rgb(32, 17, 30);
+    }
+
+    .a3:hover {
+        color: rgb(96, 20, 119);
+    }
+
+    .end_li_ul, .end_ul, .end_li_ul_li {
+        list-style-type: circle;
+    }
+
+    .end_li {
+        list-style-type: none;
+    }
+
+    .end_li_ul {
+        margin-left: 30px;
+    }
+
+    .end_ul {
+        padding: 8px;
+        text-align: justify;
+        max-width: 69%;
+    }
+
+/* /CSS 1. STRANKY */
+
+
+
+
+
+/* CSS 2. STRANY */
+
+        /* table, th, td {
+            border: 1px solid rgb(29, 19, 25);
+        } */
+
+    .navv_postavy {
+        padding: 15px 10px 15px 10px;
+        border-radius: 6px;
+        background-color: rgb(124, 96, 119);
+        margin: 8px;
+        transition: 0.4s;
+    }
+
+    .navv_postavy:hover {
+        background-color: rgb(85, 66, 81);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: fit-content;
+        border-radius: 6px;
+    }
+
+    .tableresposive {
+        overflow-x: auto;
+    }
+
+    th {
+        background-color: rgb(81, 55, 83);
+        color: white;
+        height: 10%;
+    }
+
+    td, th {
+        padding: 16px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid rgb(29, 19, 25);
+    }
+
+    .text_left {
+        text-align: left;
+    }
+
+    .table_a {
+        color: rgb(32, 17, 30);
+    }
+
+    .row_c_1 {
+        background-color: rgb(236, 226, 238);
+        color: rgb(20, 20, 20);
+    }
+
+    .row_c_2 {
+        background-color: rgb(203, 188, 207);
+        color: rgb(20, 20, 20);
+    }
+
+    .borderx {
+        border-bottom: none;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    .table_img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .postavy_ul {
+        margin-left: 25px;
+    }
+
+    .postavy {
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+
+    .zluta {
+        color: rgb(253, 253, 208);
+    }
+
+    .cervena {
+        color: rgb(255, 170, 183);
+    }
+
+    .modra {
+        color: lightblue;
+    }
+
+    .ulr {
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+
+    .poznamky {
+        color: rgb(214, 208, 208);
+        font-style: italic;
+        font-size: 18px;
+    }
+
+/* /CSS 2. STRANY */
+
+
+
+/* CSS 3. STRANY */
+
+
+    .blog:hover {
+        text-decoration: underline;
+    }
+
+    .kouri_info {
+        margin: 20px;
+        padding: 5px;
+        border: 1px solid rgb(30, 21, 32);
+        border-radius: 5px;
+    }
+
+    h3 {
+        margin: 10px;
+    }
+
+/* /CSS 3. STRANY */
+
+
+
+/* FOOTER */
+
+    footer {
+        margin-top: 50px;
+        position: relative;
+        bottom: 0;
+        background-image: linear-gradient(to right, rgb(65, 53, 66), rgb(191, 143, 201));
+        width: 100%;
+    }
+
+    div {
+        text-align: center;
+        padding: 10px 15px 10px 15px;
+    }
+
+    a.foot {
+        padding: 10px 15px 10px 15px;
+    }
+
+/* /FOOTER */
+
+@media only screen and (max-width: 450px) {
+    .navv, .navh {
+        width: 100%;
+    }
+
+    .navh {
+        z-index: 999;
+    }
+
+    .ib_nadpis {
+        display: none;
+    }
+
+    .navv {
+        position: relative;
+        height: auto;
+    }
+
+    /*aside {
+        display: none;
+    }*/
+
+    p, .p2 {
+        margin: auto;
+        width: 100%;
+        padding: 8px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .hr1, hr {
+        margin: auto;
+        margin-bottom: 3px;
+        
+    }
+
+    .hl_nadpis {
+        text-align: center;
+    }
+
+    .info {
+        margin: auto;
+    }
+
+    .info-polozka {
+        float: left;
+    }
+
+    article {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    section {
+        margin: 1%;
+        width: 100%;
+    }
+
+    .end_li {
+        align-items: center;
+    }
+    
+    .end_ul {
+        max-width: 90vh;
+    }
+
+    .postavy_ul {
+        margin-left: 5vh;
+        max-width: 95vh;
+        text-align: left;
+    }
+
+    .postavy {
+        list-style-type: circle;
+        margin-left: 4vh;
+    }
+
+    aside {
+        display: inline-block;
+        position: relative;
+        right: auto;
+        margin: auto;
+        align-items: inherit;
+        height: 50vh;
+        width: 100%;
+        overflow: scroll;
+        border: 1px solid rgb(99, 67, 92);
+        border-top-style: none;
+        border-bottom-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .navv, .navh {
+        width: 100%;
+    }
+
+    .navh {
+        z-index: 999;
+    }
+
+    .ib_nadpis {
+        display: none;
+    }
+
+    .navv {
+        position: relative;
+        height: auto;
+    }
+
+    /*aside {
+        display: none;
+    }*/
+
+    p, .p2 {
+        margin: auto;
+        width: 100%;
+        padding: 8px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .hr1, hr {
+        margin: auto;
+        margin-bottom: 3px;
+        
+    }
+
+    .hl_nadpis {
+        text-align: center;
+    }
+
+    .info {
+        margin: auto;
+    }
+
+    .info-polozka {
+        float: left;
+    }
+
+    article {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    section {
+        margin: 1%;
+        width: 100%;
+    }
+
+    .end_li {
+        align-items: center;
+    }
+    
+    .end_ul {
+        max-width: 90vh;
+    }
+
+    .postavy_ul {
+        margin-left: 5vh;
+        max-width: 95vh;
+        text-align: left;
+    }
+
+    .postavy {
+        list-style-type: circle;
+        margin-left: 4vh;
+    }
+
+    aside {
+        display: inline-block;
+        position: relative;
+        right: auto;
+        margin: auto;
+        align-items: inherit;
+        height: 50vh;
+        width: 100%;
+        overflow: scroll;
+        border: 1px solid rgb(99, 67, 92);
+        border-top-style: none;
+        border-bottom-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+    }
+
+}
